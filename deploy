@@ -1,0 +1,7 @@
+#!/bin/sh
+# Deployment script
+
+yarn build
+echo "\nUpload to S3"
+cd build && ../node_modules/s3-upload/bin/s3-upload.js ../aws-upload.conf.js
+echo "Done"

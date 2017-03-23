@@ -8,6 +8,7 @@
 
 # production
 /build
+aws-credentials.json
 
 # misc
 .DS_Store
