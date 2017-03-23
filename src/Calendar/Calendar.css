@@ -1,0 +1,8 @@
+.Calendar {
+  height: 200vh;
+  font-size: 3em;
+  line-height: 50vh;
+  margin-top: 100vh;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
