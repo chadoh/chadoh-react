@@ -14,12 +14,63 @@
 .App-title {
   height: 25vh;
   margin: 0;
-  line-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.App-title small {
+  font-size: 0.35em;
+  display: block;
+}
+
+.App-logo-wrap {
+  height: 50vh;
+  width: 50vh;
+  margin: 0 auto;
+  display: flex;
 }
 
 .App-logo {
-  height: 50vh;
   border-radius: 50%;
+  margin-left: -35%;
+  width: 100%;
+}
+
+.App-logo-wrap nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+  padding-left: 1em;
+}
+
+.App-logo-wrap a {
+  display: block;
+  white-space: nowrap;
+}
+
+.App-logo-wrap a:nth-child(1) {
+  margin-left: -1.6em;
+  transform: rotate(-30deg);
+}
+
+.App-logo-wrap a:nth-child(2) {
+  margin-left: -0.4em;
+  transform: rotate(-15deg);
+}
+
+.App-logo-wrap a:nth-child(3) {
+}
+
+.App-logo-wrap a:nth-child(4) {
+  margin-left: -0.4em;
+  transform: rotate(15deg);
+}
+
+.App-logo-wrap a:nth-child(5) {
+  margin-left: -1.6em;
+  transform: rotate(30deg);
 }
 
 .App-intro {

@@ -19,11 +19,26 @@ class App extends Component {
       <div className="App">
         <Helmet><title>{title}</title></Helmet>
         <div className="App-header">
-          <h1 className="App-title">{title}</h1>
-          <img src={chadoh} className="App-logo" alt="logo" />
+          <h1 className="App-title">
+            <span>
+              {title}
+              <small>the website of a human</small>
+            </span>
+          </h1>
+          <div className="App-logo-wrap">
+            <img src={chadoh} className="App-logo" alt="logo" />
+            <nav>
+              <a href="https://medium.com/@chadoh">I write!</a>
+              <a href="https://twitter.com/chadoh">I tweet!</a>
+              <a href="http://ilike.earthclouds.best/">I speak!</a>
+              <a href="https://www.instagram.com/_chadoh_/">I photo!</a>
+              <a href="http://github.com/chadoh">I code!</a>
+            </nav>
+          </div>
           <p className="App-intro">
             <span>
-              Hello, friend! Scroll down to learn about my entire life!
+              Hello, friend!<br/>
+              Scroll down?
             </span>
           </p>
         </div>
