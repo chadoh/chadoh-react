@@ -4,7 +4,7 @@ import './Calendar.css';
 export default () => (
   <div className="Calendar">
     <iframe
-      src="https://entire.life/chadoh"
+      src="https://entire.life/chadoh?embed"
       width="100%"
       height="3350px"
       frameborder="0"
