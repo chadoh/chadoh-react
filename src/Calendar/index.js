@@ -7,7 +7,7 @@ export default () => (
       src="https://entire.life/chadoh?embed"
       width="100%"
       height="3350px"
-      frameborder="0"
+      frameBorder="0"
       style={{border: 0}}
     >
     </iframe>

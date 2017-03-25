@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Helmet} from 'react-helmet';
 import Calendar from '../Calendar';
-import chadoh from './chadoh.jpeg';
 import './App.css';
 import {sample} from 'lodash';
 
@@ -12,21 +11,35 @@ const punctuation = [
   '',
 ];
 
+const randomTitle = () =>
+  `chad${sample(punctuation)}oh${sample(punctuation)}`;
+
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: randomTitle(),
+    }
+  }
+
+  changeTitle = () => {
+    this.setState({title: randomTitle()});
+  }
+
   render() {
-    const title = `chad${sample(punctuation)}oh${sample(punctuation)}`;
+    const {title} = this.state;
     return (
       <div className="App">
         <Helmet><title>{title}</title></Helmet>
         <div className="App-header">
           <h1 className="App-title">
             <span>
-              {title}
+              <span onMouseOver={this.changeTitle}>{title}</span>
               <small>the website of a human</small>
             </span>
           </h1>
           <div className="App-logo-wrap">
-            <img src={chadoh} className="App-logo" alt="logo" />
+            <img src="chadoh.jpeg" className="App-logo" alt="logo" />
             <nav>
               <a href="https://medium.com/@chadoh">I write!</a>
               <a href="https://twitter.com/chadoh">I tweet!</a>
