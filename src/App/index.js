@@ -44,7 +44,7 @@ class App extends Component {
               <a href="https://medium.com/@chadoh">I write!</a>
               <a href="https://twitter.com/chadoh">I tweet!</a>
               <a href="http://ilike.earthclouds.best/">I speak!</a>
-              <a href="https://www.instagram.com/_chadoh_/">I photo!</a>
+              <a href="https://www.instagram.com/wildobro/">I photo!</a>
               <a href="http://github.com/chadoh">I code!</a>
             </nav>
           </div>
