@@ -35,8 +35,8 @@ class App extends Component {
           <h1 className="App-title">
             <span>
               <span onMouseOver={this.changeTitle}>{title}</span>
-              <small><strong>lead monkey</strong></small>
-              <small>the website of a human</small>
+              <small>lead monkey</small>
+              <small>(the website of a human)</small>
             </span>
           </h1>
           <div className="App-logo-wrap">
